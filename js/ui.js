@@ -38,6 +38,7 @@ class UI {
 
     showAlert(message,className){
       this.clearAlert();
+      this.clearFeild();
       let div = document.createElement('div');
       div.className = className;
       div.appendChild(document.createTextNode(message));
